@@ -55,11 +55,6 @@ const placeOrder=()=>{
     totalPrice:cart.totalPrice
   }))
 }
-
-
-
-
-
   return (
     <>
       <div>
@@ -117,8 +112,6 @@ const placeOrder=()=>{
                             {(item.qty * item.price).toFixed(2)}
                           </Col>
 
-
-
                           
                         </Row>
                       </ListGroup.Item>
@@ -128,8 +121,6 @@ const placeOrder=()=>{
               </ListGroup.Item>
             </ListGroup>
           </Col>
-
-
           <Col md={4}>
                     <Card>
                         <ListGroup variant='flush'>
@@ -185,10 +176,6 @@ const placeOrder=()=>{
                         </ListGroup>
                     </Card>
                 </Col>
-
-
-
-
         </Row>
       </div>
     </>

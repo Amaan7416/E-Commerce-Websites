@@ -89,11 +89,6 @@ function Header() {
 
                                 </NavDropdown>
                             )}
-
-
-
-
-
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -37,13 +37,6 @@ function CheckoutSteps({step1,step2,step3,step4}) {
             <Nav.Link disabled>Payment</Nav.Link>
         )}
     </Nav.Item>
-
-
-
-
-
-
-
     <Nav.Item>
         {step4?(
               <LinkContainer to="/placeorder">
@@ -53,10 +46,6 @@ function CheckoutSteps({step1,step2,step3,step4}) {
             <Nav.Link disabled>Place Order</Nav.Link>
         )}
     </Nav.Item>
-
-
-
-
 </Nav>
   )
 }

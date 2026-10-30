@@ -70,7 +70,7 @@ function ProductEditScreen({params}) {
                 }
             }
 
-            const { data } = await axios.post('/api/products/upload/', formData, config)
+            const { data } = await axios.post('https://e-commerce-websites-1ne1.onrender.com/api/products/upload/', formData, config)
 
 
             setImage(data)

@@ -49,7 +49,7 @@ export const signup = (fname, lname, email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/api/users/register/",
+      "https://e-commerce-websites-1ne1.onrender.com/api/users/register/",
       {
         fname: fname,
         lname: lname,
@@ -88,7 +88,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/api/users/login",
+      "https://e-commerce-websites-1ne1.onrender.com/api/users/login",
       {
         username: email,
         password: password,
@@ -113,15 +113,10 @@ export const login = (email, password) => async (dispatch) => {
     });
   }
 };
-
-
 export const logout=()=>(dispatch)=>{
   localStorage.removeItem('userInfo')
   dispatch({type:USER_LOGOUT})
 }
-
-
-
 
 
 export const listUsers = () => async (dispatch, getState) => {
@@ -142,7 +137,7 @@ export const listUsers = () => async (dispatch, getState) => {
       }
 
       const { data } = await axios.get(
-          `/api/users/getallusers/`,
+          `https://e-commerce-websites-1ne1.onrender.com/api/users/getallusers/`,
           config
       )
 
@@ -181,7 +176,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
       }
 
       const { data } = await axios.delete(
-          `/api/users/delete/${id}/`,
+          `https://e-commerce-websites-1ne1.onrender.com/api/users/delete/${id}/`,
           config
       )
 
@@ -220,7 +215,7 @@ export const updateUser = (user) => async (dispatch, getState) => {
       }
 
       const { data } = await axios.put(
-          `/api/users/update/${user._id}/`,
+          `https://e-commerce-websites-1ne1.onrender.com/api/users/update/${user._id}/`,
           user,
           config
       )
@@ -267,7 +262,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
       }
 
       const { data } = await axios.get(
-          `/api/users/${id}/`,
+          `https://e-commerce-websites-1ne1.onrender.com/api/users/${id}/`,
           config
       )
 
@@ -306,7 +301,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
       }
 
       const { data } = await axios.put(
-          `/api/users/profile/update/`,
+          `https://e-commerce-websites-1ne1.onrender.com/api/users/profile/update/`,
           user,
           config
       )

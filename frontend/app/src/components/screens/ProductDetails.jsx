@@ -32,15 +32,12 @@ const addToCartHandler=()=>{
   navigate(`/cart/${id}?qty=${qty}`)
 }
 
-
-
   return (
     <>
       <div>
         <Link to="/" className="btn btn-dark my-3">
           Go Back
         </Link>
-
 
 {loading?(<Loader/>):error?(<Message variant='danger'onClose={handleClose} >{error}</Message>):(
         <Row>
@@ -117,18 +114,11 @@ const addToCartHandler=()=>{
                 <ListGroup.Item>
                 <Button className='btn-block btn-success' disabled={product.countInStock==0} type='button' onClick={addToCartHandler}>Add to Cart</Button>
                 </ListGroup.Item>
-
-
-
-
-
               </ListGroup>
             </Card>
           </Col>
         </Row>
         )}
-
-
       </div>
     </>
   );

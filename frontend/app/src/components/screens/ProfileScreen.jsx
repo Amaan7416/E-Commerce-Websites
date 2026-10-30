@@ -137,11 +137,6 @@ function ProfileScreen() {
 
         </Form>
     </Col>
-
-
-
-
-
     <Col md={9}>
                 <h2>My Orders</h2>
                 {loadingOrders ? (
@@ -181,12 +176,6 @@ function ProfileScreen() {
                             </Table>
                         )}
             </Col>
-
-
-
-
-
-
 
 </Row>
   )

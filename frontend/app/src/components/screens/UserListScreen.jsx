@@ -42,11 +42,6 @@ function UserListScreen() {
       }
   }
 
-
-
-
-
-
   return (
  <>
  <br />

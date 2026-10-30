@@ -133,13 +133,6 @@ function ProductListScreen() {
                            
                         </div>
                     )}
-  
-    
-    
-    
-    
-    
-    
     </>
   )
 }
