@@ -87,7 +87,7 @@ def registerUser(request):
         message=render_to_string(
             "activate.html",{
                 'user':user,
-                'domain':'https://e-commerce-websites-1ne1.onrender.com/',
+                'domain':'https://e-commerce-websites-1ne1.onrender.com',
                 'uid':urlsafe_base64_encode(force_bytes(user.pk)),
                 'token':generate_token.make_token(user)
 
